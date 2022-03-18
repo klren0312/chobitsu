@@ -3,6 +3,12 @@ import * as stylesheet from '../lib/stylesheet'
 import { map, last, each, trim, startWith, concat } from 'licia-es'
 import connector from '../lib/connector'
 import mutationObserver from '../lib/mutationObserver'
+import getSelector from '../lib/genCssSelector'
+
+export function getCssSelectorForNode(params: any) {
+  const selector = getSelector(getNode(params.nodeId), true)
+  return selector
+}
 
 export function enable() {
   each(stylesheet.getStyleSheets(), (styleSheet: any) => {

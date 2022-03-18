@@ -16,6 +16,7 @@ const methods: any = {
   'Debugger.setBlackboxPatterns': noop,
   'Debugger.setPauseOnExceptions': noop,
 
+  'DOM.getNodeByNodeId': DOM.getNodeByNodeId,
   'DOM.collectClassNamesFromSubtree': DOM.collectClassNamesFromSubtree,
   'DOM.copyTo': DOM.copyTo,
   'DOM.discardSearchResults': DOM.discardSearchResults,
@@ -84,6 +85,7 @@ const methods: any = {
 
   'CacheStorage.requestCacheNames': noop,
 
+  'CSS.getCssSelectorForNode': CSS.getCssSelectorForNode,
   'CSS.enable': CSS.enable,
   'CSS.getComputedStyleForNode': CSS.getComputedStyleForNode,
   'CSS.getInlineStylesForNode': CSS.getInlineStylesForNode,

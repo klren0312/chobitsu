@@ -8,6 +8,10 @@ import { setGlobal } from '../lib/evaluate'
 import { contain, lowerCase, each, toArr, xpath, concat } from 'licia-es'
 import { createId } from '../lib/util'
 
+export function getNodeByNodeId(nodeId: number) {
+  return getNode(nodeId)
+}
+
 export function collectClassNamesFromSubtree(params: any) {
   const node = getNode(params.nodeId)
 
